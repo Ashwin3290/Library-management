@@ -1,0 +1,6 @@
+paste these lines in your mysql client one-by-one 
+doi =date of issue
+dor=date of return
+create database testdb;
+create table libd  (membership_num bigint,book_name varchar(100),book_serial int,doi char(16),dor char(16) default 'not given yet');
+create table membership (name varchar(100),phone_number bigint,membership_num bigint);
